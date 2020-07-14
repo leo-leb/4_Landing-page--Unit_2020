@@ -1,0 +1,54 @@
+.focus {
+  position: relative;
+
+  padding-top: 80px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%) rotate(45deg);
+
+    width: 130px;
+    height: 130px;
+
+    background-color: #a4eecb;
+
+    content: "";
+    overflow: hidden;
+  }
+}
+
+.focus__content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.focus .content-text {
+  padding: 7px 0 130px 115px;
+}
+
+.focus .small-title {
+  margin-bottom: 35px;
+
+  letter-spacing: 2.7px;
+}
+
+.focus .tagline {
+  margin-bottom: 44px;
+}
+
+.focus__img-wrapper {
+  position: relative;
+
+  width: 50%;
+  height: 731px;
+}
+
+.focus__img-wrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-110px);
+}

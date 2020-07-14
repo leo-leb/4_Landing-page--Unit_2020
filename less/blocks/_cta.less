@@ -1,0 +1,66 @@
+.cta {
+  position: relative;
+
+  padding: 83px 0 90px;
+
+  background-image: url(/img/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(10, 130, 78, 0.7);
+
+    content: "";
+  }
+}
+
+.cta .container {
+  position: relative;
+
+  text-align: center;
+}
+
+.cta__desc {
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.cta__desc strong {
+  letter-spacing: 2.2px;
+}
+
+.cta__button {
+  padding: 23px 43px;
+  border: none;
+  border-radius: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 2.8px;
+  color: #2bb279;
+  background-color: #ffffff;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    outline: none;
+    background-color: darken(#fff, 10%);
+  }
+}
